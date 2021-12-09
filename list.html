@@ -1,0 +1,64 @@
+<html>
+
+<head>
+
+<title>All Lists</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        
+<link rel="stylesheet" type="text/css" href="list.css">
+<script src="list.js"></script>
+
+</head>
+
+<body onload="show_name()">
+
+<center>
+
+<div class="container-fluid">
+
+<div class="row content col-lg-6 col-md-6 col-sm-6 col-xs-6" style="background-color: #1E2022;">
+
+<span class="glyphicon glyphicon-log-out btn btn-danger col-lg-3 col-md-3 col-sm-4 col-xs-4"  style="font-size: 20px; margin-top: 10px;" onclick="logout()">   
+
+Logout
+
+</span>
+
+<h1 style="margin-top: 100px;" id="welcome_head">Welcome</h1>
+<br>
+<h3 style="text-align: left;">Create New List:</h3>
+<br>
+<input id="new_room" class="form-control" type="text" placeholder="List Name">
+<br>
+<button onclick="newList()" class="btn btn-info col-lg-3 col-md-3 col-sm-3 col-xs-3" style="border-radius: 30px; font-size: 20px;">Create List</button>
+
+</div>
+
+<div class="row content col-lg-6 col-md-6 col-sm-6 col-xs-6" style="background-color: #52616B;" id="trending">
+
+<h1>All Lists</h1>
+<br>
+<h4>Access and See All your Lists Here</h4>
+<br>
+<div id="all_lists" style="background-color: #3490DE;">
+
+
+
+</div>
+            
+</div>
+
+</div>
+
+</center>
+
+</body>
+
+</html

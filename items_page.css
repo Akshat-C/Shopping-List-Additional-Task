@@ -1,0 +1,28 @@
+body {
+    background-color: #F1F6F9;
+    color: #9BA4B4;
+}
+
+.row {
+    margin-left: -3px;
+    margin-top: 10px;
+    border-radius: 20px;
+    height: 100%; 
+    margin-bottom: 25px;
+}
+
+#trending {
+    margin-left: 20px;
+}
+
+#output {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.room_name {
+    cursor: pointer;
+	font-size: 20px;
+    color: white;
+}
+

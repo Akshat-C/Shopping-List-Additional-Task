@@ -1,0 +1,64 @@
+<html>
+
+<head>
+
+<title></title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        
+<link rel="stylesheet" type="text/css" href="items_page.css">
+<script src="items_page.js"></script>
+
+</head>
+
+<body onload="show_name()">
+
+<center>
+
+<div class="container-fluid">
+
+<div class="row content col-lg-6 col-md-6 col-sm-6 col-xs-6" style="background-color: #14274E;">
+
+<span class="glyphicon glyphicon-log-out btn btn-danger col-lg-3 col-md-3 col-sm-4 col-xs-5"  style="font-size: 20px;margin-top: 10px;" onclick="logout()">   
+
+Logout
+
+</span>
+
+<h1 style="margin-top: 150px; margin-bottom: 50px;" id="welcome_head">Welcome to </h1>
+<h2 style="text-align: left;">Add an Item</h2>
+<br>
+<input id="item_inp" class="form-control" type="text" placeholder="Enter Item">
+<br>
+<button onclick="addItem()" class="btn btn-success col-lg-3 col-md-3 col-sm-3 col-xs-3" style="font-size: 20px; border-radius: 30px; margin-top: 25px;">Add Item</button>
+
+</div>
+
+<div class="row content col-lg-6 col-md-6 col-sm-6 col-xs-6" style="background-color: #394867;" id="trending">
+
+<i class="glyphicon glyphicon-arrow-left" style="font-size: 32px; margin-left: -400px; margin-top: 40px" onclick="back()">&nbsp;Back</i>
+<h1>Items</h1>
+<br>
+<h4>See all your Items Here</h4>
+<br>
+<div id="output" style="background-color: #163172; text-align: left; color: #F6F6F6;">
+
+
+
+</div>
+            
+</div>
+
+</div>
+
+</center>
+
+</body>
+
+</html

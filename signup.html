@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Sign Up</title>
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    
+<link rel="stylesheet" type="text/css" href="signup.css">
+<script src="signup.js"></script>
+
+</head>
+
+<body>
+
+<center>
+
+<div class="container-fluid">
+
+<div class="row content col-lg-6 col-md-6 col-sm-6 col-xs-6" style="background-color: #393E46;">
+
+<h1 id="heading" style="margin-top: 254px; font-size: 42px;">Remember List</h1>
+<br>
+<h4 id="thankyou" style="margin-bottom: 254px; font-size: 24px;">Now you Will Never Forget Things when Going Shopping</h4>
+
+</div>
+
+<div class="row content col-lg-6 col-md-6 col-sm-6 col-xs-6" style="background-color: #00ADB5;" id="trending">
+
+<i class="glyphicon glyphicon-arrow-left" style="font-size: 32px; margin-left: -530px; margin-top: 40px" onclick="back()">&nbsp;Back</i>
+<h2 id="login_heading" style="margin-bottom: 75px;">Sign up to Remember List</h2>
+<br>
+
+<div style="text-align: left;">
+
+<p style="font-size: 18px;">Username:</p>
+<input id="user_name" class="form-control" type="text" placeholder="Enter Username">
+<br>
+<p style="font-size: 18px;">Password:</p>
+<input id="password" class="form-control" type="password" placeholder="Enter Password">
+<p style="font-size: 18px; color: red;" id="required"></p>
+<br>
+<button id="btn_login" class="btn btn-success" onclick="signup()" style="margin-bottom: 150px; font-size: 32px; border-radius: 30px;">Sign Up</button>
+
+
+
+</div>
+            
+</div>
+
+</div>
+
+</center>
+
+</body>
+
+</html>

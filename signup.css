@@ -1,0 +1,16 @@
+.row {
+    margin-left: -3px;
+    margin-top: 10px;
+    border-radius: 0px;
+    height: 100%; 
+    margin-bottom: 5px;
+}
+
+body {
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+#trending {
+    margin-left: 20px;
+}
